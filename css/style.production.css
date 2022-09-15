@@ -26,17 +26,17 @@ body {
 }
 
 h1 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight:700;
 }
 
 h2 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight: 700;
 }
 
 h3 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight: 700;
 }
 
@@ -46,22 +46,22 @@ h4 {
 }
 
 h5 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight: 700;
 }
 
 h6 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight: 700;
 }
 
 h7 {
-     font-size: 24 px;
+     font-size: 24px;
      font-weight: 700;
 }
 
 p {
-     font-size:  24 px;
+     font-size:  24px;
      font-weight:400;
 }
 
@@ -242,7 +242,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
 }
 
 /*page footer*/
-.page-footer{
+.page-footer {
      clear:both;
      text-align:center;
 }

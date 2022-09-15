@@ -6,8 +6,7 @@
 --grassgreen: #357b00;
 --darkyellow: #e0b300;
 --darkgreen: #357b70; 
-
---font-size-h2: 24 px;
+--font-size-h2: 24px;
 --font-weight-h2: 700;
 
 --margina:0 auto;
@@ -229,7 +228,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
 }
 
 /*page footer*/
-.page-footer{
+.page-footer {
      clear:both;
      text-align:var(--textal);
 }
@@ -325,6 +324,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
          transform: translate(0, -5px);
     }
 }
+
 @keyframes color-change {
      0% {
          fill: #edc655;
@@ -336,12 +336,14 @@ button:hover, button:focus ,.button:hover,.button:focus {
          fill: #f76414;
     }
 }
+
 #circle13030 {
      animation-duration: 4s;
      animation-name: color-change;
      animation-direction: alternate;
      animation-timing-function: linear;
 }
+
 #circle13032 {
      animation-duration:2s;
      animation-name:color-change;
@@ -349,6 +351,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
      animation-direction: alternate;
      animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
      from {
          transform: translate(0, 50px);
@@ -357,6 +360,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
          transform: translate(200px, 50px);
     }
 }
+
 #path45077 , #path45079 , #path45077-8 , #path45079-2 {
      animation: 5s cloud-move infinite alternate linear;
 }
