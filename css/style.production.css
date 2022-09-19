@@ -55,11 +55,6 @@ h6 {
      font-weight: 700;
 }
 
-h7 {
-     font-size: 24px;
-     font-weight: 700;
-}
-
 p {
      font-size:  24px;
      font-weight:400;
@@ -108,7 +103,7 @@ svg {
 
 .work-header {
      text-align: center;
-     font-size:40px;
+     font-size:30px;
 }
 
 .navigation-list {
