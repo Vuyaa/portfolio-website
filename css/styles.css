@@ -5,8 +5,10 @@
 --green: #489c00;
 --grassgreen: #357b00;
 --darkyellow: #e0b300;
---darkgreen: #357b70; 
-
+--darkgreen: #357b70;
+--lightviolet: #E6E6FA;
+--blue:#3F00FF;
+--gray:#6082B6;
 --font-size-h2:24px;
 --font-weight-h2: 700;
 
@@ -62,10 +64,6 @@ h6 {
      font-weight: var(--font-weight-h2);
 }
 
-h7 {
-     font-size: var(--font-size-h2);
-     font-weight: var(--font-weight-h2);
-}
 
 p {
      font-size:  var(--font-size-h2);
@@ -89,12 +87,14 @@ svg {
      display: flex;
      width:100%;
      padding:10px;
-     border: 2px solid #6F8FAF
+     border: 2px solid #6F8FAF;
+
     /* Attributes describe: thickness, type, color*/
 }
 
 .page-header__item:first-child{
      display: block;
+		 margin-right:auto;
      max-width:350px;
      max-height:95px;
      width: auto;
@@ -104,25 +104,39 @@ svg {
 .page-header__item:last-child{
      flex:0 1 200px;
      flex-grow: 1;
-     text-align: right;
+		 text-align:right;
+
 }
 
 .work-header {
      text-align: var(--textal);
-     font-size:40px;
+     font-size:30px;
 }
 
 .navigation-list {
-     list-style-type:none;
+     display:flex;
+		 justify-content:right;
+		 padding-left:0px;
 }
 
 .navigation-list li {
-     display: inline-block;
-     margin-left: 15px;
+     display: flex;
+
+
 }
 
 .navigation-list__item {
-			text-decoration:none;
+	  text-decoration:none;
+     border: 1px solid black;
+     display: inline-block;
+     font-family: inherit;
+     background-color: #E5E4E2;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+     transition: 1s opacity;
+		 padding-left:5px;
+		 padding-right:5px;
+		 font-size:24px;
+		 box-shadow:gray 4px 3px 0px 0px;
 }
 
 .about {
@@ -165,7 +179,7 @@ svg {
 }
 
  .grid__item {
-     background-color:#E6E6FA;
+     background-color: var(--lightviolet);
      width: auto;
      margin: 0;
      padding: 20px;
@@ -174,13 +188,13 @@ svg {
 /*"visited" , "hover" and "active"(pseudo-classes) states must be in this order for them to work*/
 a:visited {
     /* visited link */
-     color: #354b90;
+     text-decoration:none;
 }
 
 a:hover, a:focus {
     /* No underlining when hovering over a link */
     /*"a:focus" for users who navigates with the keyboard */
-     color:#3F00FF;
+     color:	var(--gray);
      animation-duration:10ms;
      animation-name:button-jump;
      animation-iteration-count: infinite;
@@ -190,7 +204,7 @@ a:hover, a:focus {
 
 a:active {
     /* selected link */
-     color: #6495ED;
+     color: black;
 }
 
 button:hover, button:focus ,.button:hover,.button:focus {
@@ -205,7 +219,7 @@ button:hover, button:focus ,.button:hover,.button:focus {
      animation-timing-function: linear;
 }
 
-.button, button {
+.button  {
     /* overwrites browser defaults */
     /* resets the border */
      border: none;
@@ -234,19 +248,19 @@ button:hover, button:focus ,.button:hover,.button:focus {
      text-align:var(--textal);
 }
 
-/*-------Page rendering for smaller displays:-----------
-/* 
+/*-------Page rendering for smaller displays:-----------*/
 /*Small displays (eg.Iphone, Average android phone...)*/
+
 @media all and (max-width: 750px) {
-	
+
      .grid {
          grid-template-columns: 1fr;
     }
-		
-     p , th, td {
-         font-size:14px;
+
+     p , th, td  {
+         font-size:16px;
     }
-		
+
   .button {
      width:100px;
      height:50px;
@@ -254,11 +268,11 @@ button:hover, button:focus ,.button:hover,.button:focus {
      margin: var(--margina);
      vertical-align: middle;
     }
-		
-  .page-header, .disclaimer, .link , .contact {
+
+		.disclaimer, .link , .contact {
          font-size:16px;
     }
-		
+
 
    .profile__portrait {
 		 position:relative;
@@ -267,23 +281,25 @@ button:hover, button:focus ,.button:hover,.button:focus {
 		 margin:var(--margina);
 		 border-radius: 50%;
     }
-		
+
     .profile {
      text-align:var(--textal);
     }
+			.navigation-list__item{
+				font-size:12px;
+		}
 }
 
 /*!*/
 /*mid sized Phones*/
+
 @media all and (min-width: 750px) and (max-width: 1200px) {
      .grid {
          grid-template-columns: 1fr 1fr;
 			}
-			
-     p ,th ,td {
+     p ,th ,td  {
          font-size:20px;
 		 }
-		 
      .button {
          width:150px;
          height:50px;
@@ -291,17 +307,17 @@ button:hover, button:focus ,.button:hover,.button:focus {
          margin: var(--margina);
          vertical-align: middle;
 			}
-			
-     .page-header ,.disclaimer, .link, .contact {
+				.disclaimer, .link, .contact {
          font-size:20px;
-			}  
+				 }
+				.navigation-list__item{
+				font-size:18px
 }
-		
+}
 
 /*!*/
 /*bigger displays (tablet, laptops...)*/
 @media all and (max-width: 1200px) {
-	
      .grid {
          grid-gap: 10px;
 			}
@@ -309,8 +325,8 @@ button:hover, button:focus ,.button:hover,.button:focus {
          grid-column: auto / auto;
          grid-row: auto / auto;
 			}
-      h1 {
-         font-size: 22px;
+      .work-header {
+         font-size:24px;
 			}
 }
 
