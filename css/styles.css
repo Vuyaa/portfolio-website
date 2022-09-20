@@ -190,7 +190,7 @@ a:focus {
   /* No underlining when hovering over a link */
 
   /* "a:focus" for users who navigates with the keyboard */
-  color: var(--gray);
+  color: red;
   animation-duration: 10ms;
   animation-name: button-jump;
   animation-iteration-count: infinite;
