@@ -183,6 +183,7 @@ svg {
 a:visited {
   /* visited link */
   text-decoration: none;
+	color:red;
 }
 
 a:hover,
