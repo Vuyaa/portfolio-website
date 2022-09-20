@@ -183,6 +183,7 @@ svg {
 a:visited {
   /* visited link */
   text-decoration: none;
+	color:red;
 }
 
 a:hover,
@@ -190,7 +191,7 @@ a:focus {
   /* No underlining when hovering over a link */
 
   /* "a:focus" for users who navigates with the keyboard */
-  color: red;
+  color: var(--gray);
   animation-duration: 10ms;
   animation-name: button-jump;
   animation-iteration-count: infinite;
