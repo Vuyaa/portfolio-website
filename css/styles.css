@@ -252,6 +252,10 @@ button:focus,
   text-align: var(--textal);
 }
 
+.soc-ico{
+	border-radius: 60%;
+}
+
 /* -------Page rendering for smaller displays:----------- */
 
 /* Small displays (eg.Iphone, Average android phone...) */
